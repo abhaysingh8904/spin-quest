@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Number Guessing</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.ico">
+    </head>
+    <body>
+    <div class="interface">
+        <div class="help" id="help-1">
+            <div class="overlay"></div>
+            <div class="info">
+                <div class="close-btn" onclick="togglehelp()">&times;</div>
+            <div class="instructions">
+                <br>
+                <p id="ins">!! INSTRUCTIONS !!</p><br><br>
+                <p>Guess a number between 1 to 100.</p><br>
+                <p>You have 6 chances to get the answer in 30 seconds.</p><br>
+                <p>If your guess is higher or lower , You will be warned.</p><br><br><br>
+                <p>Good Luck !!</p>
+            </div></div></div>
+            <button class="icon" onclick="togglehelp()"><i class="fa-solid fa-circle-info" id="icon"></i></button>
+            
+            <div class="countdown">
+             <span id="timer">
+                <span id="minute">-- </span><b>:</b><span id="second"> --</span>
+             </span>
+        </div>
+
+        <div class="tries-left">
+            <span>
+                <span >Remaining chances :</span>
+                <span class="chances" id="chance1"
+                    style="font-size: 8px;background-color: red;"></span>
+                <span class="chances" id="chance2"></span>
+                <span class="chances" id="chance3"></span>
+                <span class="chances" id="chance4"></span>
+                <span class="chances" id="chance5"></span>
+                <span class="chances" id="chance6"></span>
+            </span>    
+        </div>
+            
+        <div class="screen">
+            <span id="warnAboutInput"></span>
+            <h2 id="result" style="visibility: hidden;text-align: center;">(Hidden)</h2>
+            <h3 id="message" style="visibility: visible;text-align: center;">(Hidden)</h3> 
+        </div>
+
+            <div class="input-area">
+                <div>
+                    <label id="lab" for="inputBox">Enter your number :</label>
+                    <input id="inputBox" type="number">
+                    <input id="guessButton" type="button" value="Guess">
+                    <input id="playAgainButton" type="button" value="Play Again" style="visibility: hidden;">
+                </div>
+            </div>
+        </div>
+
+        <script src="script1.js"></script> 
+    </body>
+        
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slot-machine-body">
+            <div class="slot">
+                <div id="slot-screen">
+                    <ul class="reels">
+                        <li class="reel"><img src="images/1.png" ></li>
+                        <li class="reel"><img src="images/2.png" ></li>
+                        <li class="reel"><img src="images/3.png" ></li>
+                        <li class="reel"><img src="images/4.png" ></li>
+                        <li class="reel"><img src="images/5.png" ></li>
+                        <li class="reel"><img src="images/6.png" ></li>
+                        <li class="reel"><img src="images/7.png" ></li>
+                        <li class="reel"><img src="images/8.png" ></li>
+                        <li class="reel"><img src="images/9.png" ></li>
+                        <li class="reel"><img src="images/10.png"></li>
+                    </ul>
+
+                    <ul class="reels">
+                        <li class="reel"><img src="images/9.png" ></li>
+                        <li class="reel"><img src="images/5.png" ></li>
+                        <li class="reel"><img src="images/7.png" ></li>
+                        <li class="reel"><img src="images/2.png" ></li>
+                        <li class="reel"><img src="images/8.png" ></li>
+                        <li class="reel"><img src="images/3.png" ></li>
+                        <li class="reel"><img src="images/1.png" ></li>
+                        <li class="reel"><img src="images/4.png" ></li>
+                        <li class="reel"><img src="images/10.png" ></li>
+                        <li class="reel"><img src="images/6.png"></li>
+                    </ul>
+
+                    <ul class="reels">
+                        <li class="reel"><img src="images/5.png" ></li>
+                        <li class="reel"><img src="images/4.png" ></li>
+                        <li class="reel"><img src="images/9.png" ></li>
+                        <li class="reel"><img src="images/1.png" ></li>
+                        <li class="reel"><img src="images/10.png" ></li>
+                        <li class="reel"><img src="images/2.png" ></li>
+                        <li class="reel"><img src="images/3.png" ></li>
+                        <li class="reel"><img src="images/6.png" ></li>
+                        <li class="reel"><img src="images/8.png" ></li>
+                        <li class="reel"><img src="images/7.png"></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div>
+                
+            <button id="start-btn" class="action-btn">spin</button>
+        </div>
+
+        <div id="result-modal1" class="modal1">
+            <div class="modal-content1">
+                <p id="result-text1"></p>
+            </div>
+        </div>
+
+        <div id="result-modal2" class="modal2">
+            <div class="modal-content2">
+                <p id="result-text2"></p>
+            </div>
+        </div>
+
+        <audio id="spinSound" src="sounds/spinning-sound.mp3"></audio>
+        <audio id="winSound" src="sounds/bingo-sound.mp3"></audio>
+        <audio id="loseSound" src="sounds/losing-sound.mp3"></audio>
+
+</div>
+
+<script src="script2.js"></script>
+</body>
+
+</html>

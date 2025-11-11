@@ -1,0 +1,1067 @@
+*{
+    margin: 0;
+    border: border-box;
+}
+
+.navbar{
+    display: flex;
+   justify-content: space-evenly;
+    align-items: center;
+    height: 5vmax;
+    width: 100%;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+}
+
+.logo-cont{
+  width:80%;
+}
+.logo{
+    height: 4.5vmax;
+    width: 4.5vmax;
+    border-radius: 50%;
+    background-color: pink;
+    background-image: url(images/spin1.jpeg);
+    background-size: cover;
+    /*margin-left: 80px;*/
+}
+
+.but-about{
+    background-color: #1f213d;
+    padding: .8rem;
+    width: 8vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /*margin-right: 80px;*/
+    font-size: 1.4rem;
+    color: #f7894e;
+    text-align: center; 
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  transition: all 0.5s;
+}
+
+.but-play{
+  position:relative;
+  background-color: #c0fdff;
+  padding: 12px;
+  width: 13.7vmax;
+  left: 14.8vmax;
+  top: 6vmax;
+  font-family:'Times New Roman', Times, serif;
+  /*margin-right: 80px;*/
+  font-size: 1.8rem;
+  color: #00072d;
+  text-align: center; 
+  border-radius: 30px;
+  border:none;
+  cursor:pointer;
+  transition: all 0.35s;
+  text-transform: uppercase;
+  font-weight: 700;
+  }
+ 
+.but-about:hover {
+    background-color: #f7894e;
+    color: #1f213d;
+  }
+
+  .but-play:hover {
+    background-color: transparent;
+    color: #c0fdff;
+    border: 3px solid rgb(246, 255, 0);
+  }
+
+  .games{
+    position:absolute;
+    height: 100%;
+    width:100%;
+    background:black;
+    background-image: url(images/bck.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  .empty-space-top{
+    position:relative;
+    height:11.3vmax;
+    width:100%;
+
+  }
+
+  .hero-1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.5vmax;
+    width: 25vmax;
+    margin-top: 1.8rem;
+    margin-left: 9rem;
+    font-size: 4.5rem;
+    color: rgb(255, 251, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0px -3px 2px rgba(12, 19, 55, 0.004), 0 -1px 4px #1b7ae2, 0 -2px 10px #1b7ae2, 0 -10px 20px #1b7ae2, 0 -18px 40px #1b7ae2;
+  }
+  
+  .hero-2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.5vmax;
+    width: 37vmax;
+    margin-top: 2.2rem;
+    margin-left: 4.5rem;
+    color: rgb(255, 251, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5rem;
+    text-align:center;
+    text-transform:capitalize;
+    text-shadow: 0px -3px 2px rgba(12, 19, 55, 0.004), 0 -1px 4px #1b7ae2, 0 -2px 10px #1b7ae2, 0 -10px 20px #1b7ae2, 0 -18px 40px #1b7ae2;
+  }
+
+
+    @media (max-width: 600px) {
+    .navbar{
+      height: 7.2vh;
+    }
+    .logo{
+      height: 6.5vmax;
+      width: 6.5vmax;
+      margin-left : .8rem;
+    }
+    .but-about{
+      height: 5.5vmax;
+      width: 9.5vmax;
+      padding: .5rem;
+      font-size: .8rem;
+      margin-right: .7rem;
+    }
+     .empty-space-top{
+      display: none;
+  }
+    /* .games{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 1.5rem;
+    } */
+    .hero-1{
+      /* width: 30vmax; */
+      align-self: center;
+      font-size: 2rem;
+      margin-right: 10rem;
+    }
+    .hero-2{
+      align-self: center;
+      /* width: 40vmax; */
+      font-size: 1.1rem;
+
+    }
+    .but-play{
+      align-self: center;
+      padding: .6rem;
+      font-size: .8rem;
+    }
+  }
+/* ---------------x----------------x-------------x---------------x----------------x-------------x---------------x */
+
+
+                                               /* Main Menu Styling */
+
+  .menu{
+    position:absolute;
+    height:100vh;
+    width:100%;
+    background-image: url(images/menu_bck.jpg);
+    background-size: contain;
+  }
+
+  #menu-heading{
+    position:relative;
+    height:60px;
+    width:600px;
+    top: 50px;
+    left: 480px;
+    padding: 10px;
+    border-bottom: 5px solid #1dd3b0;
+    background: #20003f;
+    color: #ffea00;
+    text-align:center;
+    font-size: 2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px #330707;
+  }
+
+
+  .numguess{
+    position: relative;
+    height: 350px;
+    width: 350px;
+    top: 200px;
+    left:20%;
+    border-radius: 8px;
+    background-color:yellow;
+    background-image: url(images/numberguess.jpg);
+    background-size:contain;
+
+  }
+
+  .op-but{
+    width:100%;
+    height: 100%;
+    position:absolute;
+    background: rgba(1, 17, 57, 0.7);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity:0;
+    transition:0.29s ease-in;
+  }
+  
+  .op-but:hover{
+    opacity:1;
+    border-radius:8px;
+  }
+
+  .btn-3:hover{
+    border:2px solid rgb(239, 46, 40);
+    color: rgb(253, 253, 44);
+  }
+
+  .btn-4:hover{
+    border:2px solid rgb(239, 46, 40);
+    color: rgb(253, 253, 44);
+  }
+
+  .btn-3{
+    font-size:1.8rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding:8px;
+    width: 140px;
+    cursor: pointer;
+    color: white;
+    background:transparent;
+    text-transform:uppercase;
+    text-shadow: 4px 4px 4px #330707;
+    border:2px solid #c471ed;
+  }
+
+
+  .btn-4{
+    font-size:1.8rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding:8px;
+    width: 140px;
+    cursor: pointer;
+    color: white;
+    background:transparent;
+    text-transform:uppercase;
+    text-shadow: 4px 4px 4px #330707;
+    border:2px solid #c471ed;;
+  }
+
+  .slotmac{
+    position: relative;
+    height: 350px;
+    width: 350px;
+    bottom: 250px;
+    left: 57%;
+    margin-top:100px;
+    border-radius: 8px;
+    background-color:pink;
+    background-image: url(images/slotmac.jpeg);
+    background-size:cover;      
+  }
+  
+  /* ---------------x----------------x-------------x---------------x----------------x-------------x---------------x */
+
+                                /* Slot Machine Styling */                
+
+ .slot-machine-body{
+    margin:0;
+    height:100vh;
+    background-image:url(images/desk-bck-sm.jpg);
+    background-size: cover;
+  }
+
+  :root{
+    --outer-shadow:
+    0 0 0.1vw 0.4vw #fffb00,
+    0 0 0.4vw 0.6vw #000000,
+    0 0 1vw 0.4vw #001214,
+  }
+
+  .slot{
+      height: 480px;
+      width: 75%;
+      position:relative;
+      margin: auto;
+      top: 25px;
+      overflow: hidden;
+      background-color: transparent;
+      border-radius: 5px;
+      border: 5.5px double #ff27ba;
+      box-shadow: 
+      0 0 5px red,
+      0 0 10px green,
+      0 0 15px blue;
+  }
+
+  #slot-screen{
+    position:relative;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  ul li{
+    border: 3px solid #fcfc74;
+    border-radius: 4px;
+    background-color: transparent;
+    margin: px 0;
+  }
+
+.reels{
+  width: 31%;
+  position: absolute;
+  padding: 0px;
+}
+
+  .reels:nth-child(1){
+    left: 0;
+  }
+
+  .reels:nth-child(2){
+    left:34.5%;
+  }
+
+  .reels:nth-child(3){
+    right:0;
+  }
+
+  .reel img{
+    display: block;
+    margin: auto;
+    height: 240px;
+    max-width: 100%;
+  }
+
+  .action-btn {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+  #start-btn{
+    position: relative;
+    padding: 13px 30px;
+    left: 45%;
+    top: 100px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    border: 4px solid #f271d8;
+    background-color: #390933;
+    color: #f5eaaa;
+    cursor: pointer;
+  }
+  
+  
+  #start-btn:active{
+    background-color: transparent;
+    color: #f271d8;
+    border: 2px solid #f5eaaa;
+  }
+
+  .modal-content1{
+    position: absolute;
+    bottom: 187px;
+    left: 40px;
+    width: 100px;
+    height: 470px;
+    text-align: center;
+    background-color: black;
+    border: 3px solid #f833ff;
+    box-shadow: 
+    0 0 5px green,
+    0 0 10px blue,
+    0 0 15px red;
+  }
+
+  #result-text1{
+    position: relative;
+    top: 41px;
+    padding: 4px 10px;
+    font-size: 3rem;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 700; 
+  }
+
+  #result-text2{
+    position: relative;
+    top: 41px;
+    padding: 4px 10px;
+    font-size: 3rem;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 700; 
+  }
+
+  .modal-content2{
+    position: absolute;
+    bottom: 187px;
+    right: 40px;
+    width: 100px;
+    height: 470px;
+    text-align: center;
+    background-color: black;
+    border: 3px solid #f833ff;
+    box-shadow: 
+    0 0 5px green,
+    0 0 10px blue,
+    0 0 15px red;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+
+  /* ---------------x----------------x-------------x---------------x----------------x-------------x---------------x */
+
+                                /* Number Guessing Styling */                  
+                                
+     
+  .interface{
+      margin:0;
+     padding: 0;
+     height:100vh;
+     background-image: url(/images/bg-3.png);
+     background-size: cover;
+}
+
+.icon{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    top: 30px;
+    left: 40px;
+    color: yellow;
+    background: none;
+    border-radius: 50%;
+    font-size: 1.9rem;
+    text-align: center;
+    box-shadow: 2px 1px 4px skyblue;
+}
+
+.icon:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.help .overlay{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,7,0.7);
+    z-index:1;
+    display: none;
+}
+
+.help .info{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #000000;
+    border: 3px solid black;
+    border-bottom-color: red;
+    border-top-color: blue;
+    border-left-color: red;
+    border-right-color: blue;
+    width: 570px;
+    height: 320px;
+    z-index: 2;
+    text-align:center;
+    box-sizing: border-box;
+}
+
+.help .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    background: yellow;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.close-btn{
+    cursor: pointer;
+}
+
+.help.active .overlay{
+    display:block;
+}
+
+#ins{
+  color: yellow;
+  font-weight: 700;
+}
+.instructions{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #70ffd2;
+}
+
+.help.active .info{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+ul{
+    list-style: none;
+}
+
+.countdown{
+    position: relative;
+    top: 70px;
+    left: 1235px;
+    background-color: black;
+    color: #03fff7;
+    text-align: center;
+    font-size: 23px;
+    width: 100px;
+    height: 35px;
+    border: 3.5px black solid;
+    border-radius: 7px;
+    padding: 3px;
+    box-shadow:
+    0 0 7px #03fff7,
+    0 0 10px #03fff7,
+    0 0 21px #03fff7;
+}
+
+.tries-left{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    top: 30px;
+    left: 190px;
+    font-size: 1.6rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    text-shadow:
+
+    0 0 7px rgb(142, 223, 255),
+    0 0 10px rgb(142, 223, 255),
+    0 0 21px rgb(142, 223, 255);
+  
+}
+.chances{
+    position: relative;
+    bottom: 5px;
+    font-size: 5px;
+    border: 4px yellow solid;
+    border-radius: 7px;
+    margin-left: 4px;
+    padding: 3px 8px;
+}
+
+.screen{
+    position: relative;
+    top: 70px;
+    left: 565px;
+    width: 400px;
+    height: 200px;
+    background-color: black;
+    border: 3.5px double #03fff7; 
+    box-shadow: 
+    0 0 7px rgb(142, 223, 255),
+    0 0 10px rgb(142, 223, 255),
+    0 0 21px rgb(142, 223, 255);
+}
+
+.input-area{
+    position: relative;
+    text-align: left;
+    top: 120px;
+    left: 510px;
+    height: 98px;
+    width: 700px;
+    padding: 1em 2em 1em 2em;
+}
+
+#lab{
+    font-size: 1.55rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #d8e709;
+    text-shadow:
+
+    0 0 7px  rgb(224, 117, 117),
+    0 0 10px rgb(212, 100, 100),
+    0 0 21px rgb(215, 120, 110);
+}
+
+#inputBox{
+    margin-left: 7px;
+    text-align: center;
+    background: none; 
+    color: #03fff7;
+    width: 100px;
+    height: 35px;
+    font-size: 1.4rem;
+    font-weight: 600; 
+    border: 3.6px double rgb(162, 0, 255);
+    border-radius: 4.3px;
+}
+#inputBox:focus{
+    outline: none;
+    box-shadow: 1 1 1 1px #228ce2;
+
+}
+#guessButton{
+    background-color: #03fff7;
+    color: #222;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-left: 8px;
+    box-shadow:
+
+    0 0 6px  #000000,
+    0 0 9px  #000000,
+    0 0 20px #000000;
+    
+    width: 120px;
+    height: 45px;
+}
+
+#warnAboutInput{
+  position: relative;
+  width: 100px;
+  top: 80px;
+  left: 80px;
+  color: #ff043e;
+  font-weight: 600;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+#result{
+  position: relative;
+  top: 38px;
+  font-size: 2.1rem;
+}
+
+#message{
+  position: relative;
+  top: 80px;
+  font-size: 1.8rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#playAgainButton{
+    position: relative;
+    right: 130px;
+    background-color: #03fff7;
+    color: #222;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow:
+
+    0 0 6px  #000000,
+    0 0 9px  #000000,
+    0 0 20px #000000;
+    width: 150px;
+    height: 45px;
+}
+#guessButton:hover, #playAgainButton:hover{
+    background-color: black;
+    color: #03fff7;
+    cursor: pointer;
+    box-shadow:
+
+    0 0 6px  #03fff7,
+    0 0 9px  #03fff7,
+    0 0 20px #03fff7;
+   
+}
+
+#guessButton:active, #playAgainButton:active{
+    background-color: #18629c;
+}
+
+
+
+  /* ---------------x----------------x-------------x---------------x----------------x-------------x---------------x */
+
+                                /* About Us Section */   
+      
+  #background-about{
+    position: absolute; 
+    height: 160rem;
+    width: 100%;
+    object-fit: cover;  
+  }
+
+  .header{
+    position: relative;
+    display: inline-block;
+    left: 41.9%;
+    top: 20px;
+    color: #2ec4b6;
+    font-size: 45px;
+  }
+
+  #ab{
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #fca311;
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  .ruler{
+    position: relative;
+    height: 12px;
+    width: 90%;
+    left: 5%;
+    top: 40px;
+    background-color: #f0fff1;
+  }
+    
+  .head-1{
+      position:relative;
+      top: 80px;
+      height: 50px;
+      width: 300px;
+      left: 40.5%;
+      border: 7px solid rgb(255, 230, 0);
+      border-radius: 10px;
+      border-bottom:none;
+      border-top: none;
+      color: #e0fbfc;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .desc{
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  .para{
+    position: relative;
+    height: 150px;
+    width: 830px;
+    top: 210px;
+    font-size: 37px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2ec4b6;
+  }
+
+  .gamelogo{
+    position: relative;
+    height: 350px;
+    width: 350px;
+    top: 100px;
+    background-image: url(images/spin1.jpeg);
+    background-size: contain;
+    box-shadow: 0 0 10px 5px rgb(4, 4, 65);
+    z-index:1;
+    border-radius: 50%;
+  }
+
+  .head-2{
+    position:relative;
+    top: 180px;
+    height: 50px;
+    width: 380px;
+    left: 38.4%;
+    border: 7px solid rgb(255, 230, 0);
+    border-radius: 10px;
+    border-bottom:none;
+    border-top: none;
+    color: #e0fbfc;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.profile-lead{
+  position: absolute;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  top: 850px;
+  left: 38%;
+  height: 430px;
+  width: 400px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  transition:.4s ease-in-out;
+}
+
+.profile-lead:hover{
+  cursor:pointer;
+  transform:scale(1.05);
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  animation: card 5s ease infinite; 
+  background-size: 200%;
+}
+
+@keyframes card{
+  0%{
+    background-position: 0% 50%;
+  }
+
+  50%{
+    background-position: 100% 50%;
+  }
+
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+.pic-1{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  top:8px;
+  border-radius: 50%;
+  background-image: url(images/profile-pic.jpg);
+  background-size: cover;
+}
+
+ol{
+  list-style: none;
+}
+
+#ttl{
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.details-1{
+  position: relative;
+  height: 220px;
+  width: 400px;
+  top: 15px;
+  font-size:1.3rem;
+  font-weight: 600;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.profile-mem{
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  top: 850px;
+  height: 500px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.profile-1{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  height: 420px;
+  width: 400px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  transition : .4s ease-in-out;
+}
+
+.profile-1:hover{
+  cursor:pointer;
+  transform:scale(1.05);
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  animation: card 5s ease infinite; 
+  background-size: 200%;
+}
+
+.pic-2{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  top:8px;
+  border-radius: 50%;
+  background-image: url(images/ansh_.jpg);
+  background-size : cover;
+}
+
+.details-2{
+  position: relative;
+  height: 220px;
+  width: 400px;
+  top: 15px;
+  font-size:1.3rem;
+  font-weight: 600;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-2{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  height: 420px;
+  width: 400px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  transition : .4s ease-in-out;
+}
+
+.profile-2:hover{
+  cursor:pointer;
+  transform:scale(1.05);
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  animation: card 5s ease infinite; 
+  background-size: 200%;
+}
+
+.pic-3{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  top:8px;
+  border-radius: 50%;
+  background-image: url(images/abhay-2.jpg);
+  background-size: cover;
+}
+
+.details-3{
+  position: relative;
+  height: 220px;
+  width: 400px;
+  top: 15px;
+  font-size:1.3rem;
+  font-weight: 600;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-3{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  height: 420px;
+  width: 400px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  transition : .4s ease-in-out;
+}
+
+.profile-3:hover{
+  cursor:pointer;
+  transform:scale(1.05);
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  animation: card 5s ease infinite; 
+  background-size: 200%;
+}
+
+.pic-4{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  top:8px;
+  border-radius: 50%;
+  background-image: url(images/abhay-1.jpg);
+  background-size: cover;
+}
+
+.details-4{
+  position: relative;
+  height: 220px;
+  width: 400px;
+  top: 15px;
+  font-size:1.3rem;
+  font-weight: 600;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.head-3{
+  position:relative;
+  top: 900px;
+  height: 50px;
+  width: 415px;
+  left: 38%;
+  border: 7px solid rgb(255, 230, 0);
+  border-radius: 10px;
+  border-bottom:none;
+  border-top: none;
+  color: #e0fbfc;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.projectinfo{
+  position: relative;
+  height: 150px;
+  width: 80%;
+  left: 10%;
+  top: 1050px;
+  text-align: center;
+}
+
+#p-1{
+  font-size: 2rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #2ec4b6;
+}
+#p-2{
+  font-size: 2rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #2ec4b6;
+}
+
+h2{
+  font-size: 2.8rem;
+  color: orange;
+}
